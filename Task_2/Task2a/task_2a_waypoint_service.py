@@ -10,7 +10,7 @@ class WayPoints(Node):
     def __init__(self):
         super().__init__('waypoints_service')
         self.srv = self.create_service(GetWaypoints, 'waypoints', self.waypoint_callback)
-        self.waypoints = []
+        self.waypoints = [[-7.00, 0.00, 29.22],[-7.64, 3.06, 29.22],[-8.22, 6.02, 29.22],[-9.11, 9.27, 29.27],[-5.98, 8.81, 29.27],[-3.26, 8.41, 29.88],[0.87, 8.18, 29.05],[3.93, 7.35, 29.05]]
 
     
     def waypoint_callback(self, request, response):

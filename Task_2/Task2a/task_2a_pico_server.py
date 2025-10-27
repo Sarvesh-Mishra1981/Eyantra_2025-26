@@ -15,7 +15,7 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 
 #import control specific libraries
-
+from waypoint_navigation.action import NavToWaypoint
 #import the action
 
 #pico control specific libraries
